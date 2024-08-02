@@ -117,7 +117,9 @@ impl<'a> Iterator for Lexer<'a> {
 
 
             match c {
-              
+                ' ' | '\n' | '\t' => {
+                    self.input.next();
+                }
                 '0'..='9' => {
                     return Some(self.read_number(c));
                 }
