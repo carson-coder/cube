@@ -1,3 +1,5 @@
+# Cube
+
 welcome to Cube, a programming language written in rust for Type Safety and Performance.
 
 ## Features

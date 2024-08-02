@@ -198,14 +198,14 @@ impl<'a> Iterator for Lexer<'a> {
                         return None;
                     }
                 }
-                // '(' => {
-                //     self.input.next();
-                //     return Some(Token::LeftParen);
-                // }
-                // ')' => {
-                //     self.input.next();
-                //     return Some(Token::RightParen);
-                // }
+                '(' => {
+                    self.input.next();
+                    return Some(Token::LeftParen);
+                }
+                ')' => {
+                    self.input.next();
+                    return Some(Token::RightParen);
+                }
                 '{' => {
                     self.input.next();
                     return Some(Token::LeftBrace);
